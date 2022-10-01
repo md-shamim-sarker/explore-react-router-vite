@@ -5,13 +5,15 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import ErrorPage from './error-page';
 import './index.css';
 import Root from './routes/root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>
   },
 ]);
 
